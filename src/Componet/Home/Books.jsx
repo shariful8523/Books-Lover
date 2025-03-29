@@ -25,7 +25,6 @@ const Books = () => {
 
                      }
 
-
                </div>
         </div>
     );
