@@ -12,16 +12,18 @@ const BooksDetails = () => {
 
     const book = data.find(book => book.bookId === id);
 
-    const {image,
+    const {
+        image,
         bookName,
         author,
         category,
         review,
-       
         totalPages,
         rating,
         publisher,
-        yearOfPublishing,} = book;
+        yearOfPublishing,
+        
+        } = book;
    
     return (
         <div className='mt-10 flex w-10/12  mx-auto  '>
@@ -52,7 +54,7 @@ const BooksDetails = () => {
 
                  <span >
                  <button class="btn btn-outline btn-success mt-5 ">Read</button>
-                 <button class="btn btn-outline btn-warning ml-10 mt-5">Wishlist</button>
+                 <button class="btn btn-active btn-warning ml-10 mt-5">Wishlist</button>
                  </span>
 
 
